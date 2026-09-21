@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — TUG'S Miami Beach</title>
+<meta name="description" content="Find TUG'S at 1200 Ocean Drive, Miami Beach. Hours, map and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600;700&family=Special+Elite&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/logo.png">
+</head>
+<body>
+<div class="stripes"></div>
+<header><div class="nav">
+  <a href="index.html"><img src="assets/logo.png" alt="TUG'S logo"></a>
+  <a href="index.html" class="brand">TUG<span>'S</span></a>
+  <nav>
+    <a href="index.html" >Home</a>
+    <a href="menu.html" >Menu</a>
+    <a href="about.html" >About</a>
+    <a href="jobs.html" >Jobs</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="#" class="cta" title="Coming soon">Order Online</a>
+  </nav>
+  <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></header>
+<div class="stripes b"></div>
+
+<section><div class="wrap">
+  <span class="plate"><span>FIND US</span></span>
+  <p class="sec-sub">Right on Ocean Drive. You can't miss the bulldog.</p>
+  <div class="split2">
+    <div>
+      <h3 style="font-family:'Anton',sans-serif;font-size:24px;letter-spacing:1px;margin-bottom:10px">TUG'S</h3>
+      <p style="font-size:17px">1200 Ocean Drive<br>Miami Beach, FL 33139</p>
+      <p style="margin-top:18px;font-family:'Special Elite',monospace">Open daily &middot; 11 AM &ndash; 2 AM <span class="ph">(placeholder)</span></p>
+      <p style="margin-top:18px">Instagram: <a href="https://instagram.com/tugsmiamibeach">@tugsmiamibeach</a> <span class="ph">(placeholder)</span><br>
+      Email: <a href="mailto:hello@tugsmiami.com">hello@tugsmiami.com</a> <span class="ph">(placeholder)</span><br>
+      Phone: <span class="ph">(305) XXX-XXXX &mdash; add before launch</span></p>
+      <div class="btns" style="justify-content:flex-start;margin-top:26px">
+        <a class="btn solid" href="https://maps.google.com/?q=1200+Ocean+Drive,+Miami+Beach,+FL" target="_blank" rel="noopener">Open in Maps</a>
+      </div>
+    </div>
+    <iframe title="Map to TUG'S" src="https://www.google.com/maps?q=1200+Ocean+Drive,+Miami+Beach,+FL&output=embed"
+      style="width:100%;height:380px;border:3px solid var(--ink);border-radius:12px;box-shadow:6px 6px 0 var(--teal)" loading="lazy"></iframe>
+  </div>
+</div></section>
+
+<footer>
+  <div class="fbrand">TUG<span>'S</span></div>
+  <div class="ftag">Sports &middot; Cold Beer &middot; A Lot of Fun</div>
+  <div class="faddr">1200 Ocean Drive, Miami Beach, FL &middot; Open daily 11 AM &ndash; 2 AM <span class="ph">(hours TBD)</span></div>
+  <div class="fsocial"><a href="https://instagram.com/tugsmiamibeach">@tugsmiamibeach</a> <span class="ph">(placeholder)</span></div>
+</footer>
+<div class="stripes b"></div>
+
+<script>
+(function(){
+  var b = document.querySelector('.burger'), h = document.querySelector('header');
+  if(!b) return;
+  b.addEventListener('click', function(){
+    var open = h.classList.toggle('open');
+    b.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('header nav a').forEach(function(a){
+    a.addEventListener('click', function(){ h.classList.remove('open'); b.setAttribute('aria-expanded','false'); });
+  });
+})();
+</script>
+</body></html>

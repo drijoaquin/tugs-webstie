@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — TUG'S Miami Beach</title>
+<meta name="description" content="The story of TUG'S: an unpretentious sports bar on Ocean Drive built around Tug the bulldog.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600;700&family=Special+Elite&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/logo.png">
+</head>
+<body>
+<div class="stripes"></div>
+<header><div class="nav">
+  <a href="index.html"><img src="assets/logo.png" alt="TUG'S logo"></a>
+  <a href="index.html" class="brand">TUG<span>'S</span></a>
+  <nav>
+    <a href="index.html" >Home</a>
+    <a href="menu.html" >Menu</a>
+    <a href="about.html" class="active">About</a>
+    <a href="jobs.html" >Jobs</a>
+    <a href="contact.html" >Contact</a>
+    <a href="#" class="cta" title="Coming soon">Order Online</a>
+  </nav>
+  <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></header>
+<div class="stripes b"></div>
+
+<section><div class="wrap">
+  <span class="plate"><span>ABOUT TUG'S</span></span>
+  <p class="sec-sub">The bulldog runs the place. We just work here.</p>
+  <div class="split">
+    <div>
+      <p style="font-size:17px;margin-bottom:16px">TUG'S is a new high-energy bar &amp; restaurant opening at 1200 Ocean Drive, in the heart of South Beach. Cold beer, smash burgers, fried everything, frozen drinks, sports and a lot of fun &mdash; an unpretentious neighborhood spot built around Tug, our bulldog.</p>
+      <p style="font-size:17px;margin-bottom:16px">No reservations, no attitude. High volume all day and late into the night, with every game on and the frozen machines spinning. Come for the Dog Park &mdash; our build-your-own hot dog program &mdash; stay for the beer towers.</p>
+      <p class="scrawl" style="font-size:24px">"He'd order the double." &mdash; Tug</p>
+    </div>
+    <img src="assets/logo.png" alt="Tug the bulldog" style="width:100%">
+  </div>
+</div></section>
+
+<div class="band-dark"><section><div class="wrap" style="text-align:center">
+  <span class="plate"><span>HOUSE RULES</span></span>
+  <p style="margin-top:20px;font-family:'Special Elite',monospace;font-size:18px;line-height:2.2">
+    Cold beer. Good food. Great times.<br>Tip well = new high score.<br>Come have fun.
+  </p>
+</div></section></div>
+
+<footer>
+  <div class="fbrand">TUG<span>'S</span></div>
+  <div class="ftag">Sports &middot; Cold Beer &middot; A Lot of Fun</div>
+  <div class="faddr">1200 Ocean Drive, Miami Beach, FL &middot; Open daily 11 AM &ndash; 2 AM <span class="ph">(hours TBD)</span></div>
+  <div class="fsocial"><a href="https://instagram.com/tugsmiamibeach">@tugsmiamibeach</a> <span class="ph">(placeholder)</span></div>
+</footer>
+<div class="stripes b"></div>
+
+<script>
+(function(){
+  var b = document.querySelector('.burger'), h = document.querySelector('header');
+  if(!b) return;
+  b.addEventListener('click', function(){
+    var open = h.classList.toggle('open');
+    b.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('header nav a').forEach(function(a){
+    a.addEventListener('click', function(){ h.classList.remove('open'); b.setAttribute('aria-expanded','false'); });
+  });
+})();
+</script>
+</body></html>

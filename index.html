@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TUG'S — Sports Bar & Restaurant, Miami Beach</title>
+<meta name="description" content="TUG'S: sports, cold beer and a lot of fun at 1200 Ocean Drive, Miami Beach. Build-your-own dogs, smash burgers, frozen drinks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600;700&family=Special+Elite&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/logo.png">
+</head>
+<body>
+<div class="stripes"></div>
+<header><div class="nav">
+  <a href="index.html"><img src="assets/logo.png" alt="TUG'S logo"></a>
+  <a href="index.html" class="brand">TUG<span>'S</span></a>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html" >Menu</a>
+    <a href="about.html" >About</a>
+    <a href="jobs.html" >Jobs</a>
+    <a href="contact.html" >Contact</a>
+    <a href="#" class="cta" title="Coming soon">Order Online</a>
+  </nav>
+  <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></header>
+<div class="stripes b"></div>
+
+<div class="hero">
+  <div class="glow"></div>
+  <img src="assets/logo.png" alt="Tug the bulldog">
+  <h1>TUG<span>'S</span></h1>
+  <div class="tag">Sports &middot; Cold Beer &middot; A Lot of Fun</div>
+  <div class="addr">1200 Ocean Drive &middot; Miami Beach, FL &middot; No reservations</div>
+  <div class="btns">
+    <a class="btn solid" href="menu.html">See the Menu</a>
+    <a class="btn ghost" href="#" title="Coming soon">Order Online</a>
+  </div>
+</div>
+
+<section><div class="wrap">
+  <span class="plate"><span>WELCOME TO THE PARK</span></span>
+  <p class="sec-sub">An unpretentious spot in the heart of South Beach, built around Tug, our bulldog.</p>
+  <div class="cards">
+    <div class="card"><h3>DOG <em>PARK</em></h3><p>Build your own dog, your way: pick the dog, pick the bun, stack the toppings, make it epic. Kosher all-beef from $7.50 &mdash; foot long with a cold beer for $15.</p></div>
+    <div class="card"><h3>EVERY GAME <em>ON</em></h3><p>Sports all day, cold beer all night. Draft, bottles, towers and buckets &mdash; grab a seat, the good stuff is always pouring.</p></div>
+    <div class="card"><h3>THE FROZEN <em>LINEUP</em></h3><p>Frozen margaritas, daiquiris, pi&ntilde;a coladas and the Miami Vice, blended cold and served colder in frosted stadium cups.</p></div>
+  </div>
+</div></section>
+
+<div class="band-dark"><section><div class="wrap" style="text-align:center">
+  <span class="plate"><span>OPEN DAILY &middot; 11 AM &ndash; 2 AM</span></span>
+  <p style="margin-top:18px;font-family:'Special Elite',monospace">Kitchen closes late. Fryers close when they close. <span class="ph">(hours placeholder &mdash; update before launch)</span></p>
+  <div class="btns"><a class="btn solid" href="contact.html">Find Us</a><a class="btn ghost" href="jobs.html">Join the Team</a></div>
+</div></section></div>
+
+<section><div class="wrap" style="text-align:center">
+  <p class="scrawl" style="font-size:26px">"Wish you were here. Oh wait &mdash; you were."</p>
+</div></section>
+
+<footer>
+  <div class="fbrand">TUG<span>'S</span></div>
+  <div class="ftag">Sports &middot; Cold Beer &middot; A Lot of Fun</div>
+  <div class="faddr">1200 Ocean Drive, Miami Beach, FL &middot; Open daily 11 AM &ndash; 2 AM <span class="ph">(hours TBD)</span></div>
+  <div class="fsocial"><a href="https://instagram.com/tugsmiamibeach">@tugsmiamibeach</a> <span class="ph">(placeholder)</span></div>
+</footer>
+<div class="stripes b"></div>
+
+<script>
+(function(){
+  var b = document.querySelector('.burger'), h = document.querySelector('header');
+  if(!b) return;
+  b.addEventListener('click', function(){
+    var open = h.classList.toggle('open');
+    b.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('header nav a').forEach(function(a){
+    a.addEventListener('click', function(){ h.classList.remove('open'); b.setAttribute('aria-expanded','false'); });
+  });
+})();
+</script>
+</body></html>
