@@ -1,6 +1,6 @@
 :root{
-  --teal:#3EBCA2; --teal-deep:#2A8F79; --coral:#E8432C; --ink:#191A18;
-  --blush:#F6E2D0; --blush-2:#FAEFE1; --gold:#E9C46A; --gray:#55544a;
+  --teal:#4BBEA3; --teal-deep:#379A83; --coral:#E64126; --ink:#1B1817;
+  --blush:#F7E0CE; --blush-2:#FAECDD; --gold:#E9C46A; --gray:#55544a;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -94,7 +94,7 @@ section{padding:64px 0}
 .steps div p{font-size:15px;color:#e8dccb}
 .steps b{color:#fff}
 .steps .pp{color:var(--coral);font-weight:700}
-.dogpark .pup{position:absolute;right:26px;top:20px;width:110px}
+.dogpark .pup{position:absolute;right:18px;top:12px;width:80px}
 @media(max-width:700px){.dogpark .pup{display:none}}
 
 /* jobs */
@@ -152,3 +152,8 @@ details[open]>summary .chev{transform:rotate(180deg)}
   header.open .burger span:nth-child(2){opacity:0}
   header.open .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 }
+
+/* brand refresh: slab (Mokoko-like) + rounded (New Atten-like) accents */
+.card h3,.job h3{font-family:'Rokkitt',serif;font-weight:900}
+.hero .tag,.sec-sub,footer .ftag,.dogpark .tag,.note{font-family:'Varela Round',sans-serif;letter-spacing:2px}
+.sec-sub,.note{font-size:15px;letter-spacing:.5px}
