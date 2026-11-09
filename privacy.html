@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — TUG'S, Miami Beach</title>
+<meta name="description" content="Privacy Policy for TUG'S Sports Bar & Restaurant, 1200 Ocean Drive, Miami Beach.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600;700&family=Special+Elite&family=Rokkitt:wght@900&family=Varela+Round&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/logo.png">
+</head>
+<body>
+<div class="stripes"></div>
+<header><div class="nav">
+  <a href="index.html"><img src="assets/logo.png" alt="TUG'S — back to home"></a>
+  <a href="index.html" class="brand">TUG<span>'S</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></header>
+<div class="stripes b"></div>
+
+<section><div class="wrap legal">
+  <span class="plate"><span>PRIVACY POLICY</span></span>
+  <p class="sec-sub">Effective date: November 9, 2026 &middot; The short version: we barely collect anything.</p>
+
+  <h2>Who we are</h2>
+  <p>TUG'S is a sports bar &amp; restaurant located at 1200 Ocean Drive, Miami Beach, FL 33139, operated by Core Restaurants Miami Beach ("TUG'S", "we", "us"). This policy explains what information is collected when you visit this website and how it is used. Questions? Email us at <a href="mailto:hello@tugsmiamibeach.com">hello@tugsmiamibeach.com</a> <span class="ph">(placeholder &mdash; update before launch)</span>.</p>
+
+  <h2>What we collect</h2>
+  <p>This website is a simple informational site. It has no user accounts, no forms, and it does not ask you for personal information. We do not sell personal information, and we do not use it for targeted advertising.</p>
+  <p>Like almost every website, some technical data is processed automatically when you visit:</p>
+  <ul>
+    <li><b>Server logs.</b> Our site is hosted on GitHub Pages (operated by GitHub, Inc.). GitHub may log standard technical data such as your IP address for security and operational purposes. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>.</li>
+    <li><b>Fonts.</b> Our pages load fonts from Google Fonts. When a page loads, your browser requests those font files from Google's servers, which involves transmitting your IP address to Google. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+  </ul>
+  <p>We do not have access to, and do not compile, any of this technical data ourselves.</p>
+
+  <h2>If you contact us</h2>
+  <p>If you email or call us &mdash; for example about a job, an event, or feedback &mdash; we will use the information you share only to respond to you. Job application materials are used only for hiring purposes.</p>
+
+  <h2>Cookies</h2>
+  <p>This site does not set cookies of its own. For details &mdash; and what will change if we ever add analytics &mdash; see our <a href="cookies.html">Cookie Policy</a>.</p>
+
+  <h2>Links to other sites</h2>
+  <p>Our site links to third-party services such as Instagram. Those services have their own privacy practices, which we don't control. Check their policies before sharing information with them.</p>
+
+  <h2>Online ordering &amp; reservations</h2>
+  <p>If and when we offer online ordering or reservations, they will be handled by a third-party provider. That provider will process your order, contact and payment details under its own privacy policy, and we will update this page to name them.</p>
+
+  <h2>Children</h2>
+  <p>This website is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+
+  <h2>Your choices &amp; rights</h2>
+  <p>Since we don't build profiles or maintain marketing databases from this website, there's usually nothing for us to delete &mdash; but if you've emailed us and want that correspondence removed, just ask and we'll take care of it. Depending on where you live, you may have additional rights under local privacy laws; contact us and we'll do our best to honor them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change how this website handles information &mdash; for example, by adding analytics, a newsletter, or online ordering &mdash; we will update this policy and change the effective date at the top of this page.</p>
+
+  <p class="scrawl" style="font-size:22px;margin-top:26px">That's it. Now go look at the menu.</p>
+</div></section>
+
+<footer>
+  <div class="fbrand">TUG<span>'S</span></div>
+  <div class="ftag">Sports &middot; Cold Beer &middot; A Lot of Fun</div>
+  <div class="faddr">1200 Ocean Drive, Miami Beach, FL &middot; Open daily 11 AM &ndash; 2 AM <span class="ph">(hours TBD)</span></div>
+  <div class="fsocial"><a href="https://instagram.com/tugsmiamibeach">@tugsmiamibeach</a> <span class="ph">(placeholder)</span></div>
+  <div class="flegal"><a href="privacy.html">Privacy Policy</a> &middot; <a href="cookies.html">Cookie Policy</a></div>
+</footer>
+<div class="stripes b"></div>
+
+<script>
+(function(){
+  var b = document.querySelector('.burger'), h = document.querySelector('header');
+  if(!b) return;
+  b.addEventListener('click', function(){
+    var open = h.classList.toggle('open');
+    b.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('header nav a').forEach(function(a){
+    a.addEventListener('click', function(){ h.classList.remove('open'); b.setAttribute('aria-expanded','false'); });
+  });
+})();
+</script>
+</body></html>

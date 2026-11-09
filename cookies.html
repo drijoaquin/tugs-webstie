@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cookie Policy — TUG'S, Miami Beach</title>
+<meta name="description" content="Cookie Policy for TUG'S Sports Bar & Restaurant, 1200 Ocean Drive, Miami Beach.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600&family=Barlow+Condensed:wght@600;700&family=Special+Elite&family=Rokkitt:wght@900&family=Varela+Round&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="assets/logo.png">
+</head>
+<body>
+<div class="stripes"></div>
+<header><div class="nav">
+  <a href="index.html"><img src="assets/logo.png" alt="TUG'S — back to home"></a>
+  <a href="index.html" class="brand">TUG<span>'S</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</div></header>
+<div class="stripes b"></div>
+
+<section><div class="wrap legal">
+  <span class="plate"><span>COOKIE POLICY</span></span>
+  <p class="sec-sub">Effective date: November 9, 2026 &middot; Spoiler: the only thing we bake is buns.</p>
+
+  <h2>The current situation</h2>
+  <p><b>This website does not set any cookies.</b> No analytics cookies, no advertising cookies, no tracking pixels, no fingerprinting. That's why you don't see a cookie banner here &mdash; there's nothing to consent to.</p>
+
+  <h2>What cookies are, in one line</h2>
+  <p>Cookies are small text files a website can store in your browser to remember things about you between visits &mdash; useful for logins and shopping carts, and also commonly used for analytics and advertising.</p>
+
+  <h2>Third-party services we use</h2>
+  <p>Our site is hosted on GitHub Pages and loads fonts from Google Fonts. These services deliver files to your browser but, as we use them, do not set cookies on this site. Requests to them do transmit standard technical data such as your IP address &mdash; see our <a href="privacy.html">Privacy Policy</a> for details.</p>
+
+  <h2>If this ever changes</h2>
+  <p>If we add tools that use cookies &mdash; for example web analytics to count visits, or a social media pixel to measure our ads &mdash; we will update this page to list exactly which cookies are set, what they do and how long they last, and where required we will ask for your consent through a notice on the site before any non-essential cookies are placed.</p>
+
+  <h2>How to control cookies</h2>
+  <p>You can block or delete cookies for any website at any time in your browser settings &mdash; look for "Cookies and site data" in Chrome, Safari, Firefox or Edge. Blocking cookies won't break anything on this site, because we don't use them.</p>
+
+  <p class="scrawl" style="font-size:22px;margin-top:26px">No trackers. Just hot dogs.</p>
+</div></section>
+
+<footer>
+  <div class="fbrand">TUG<span>'S</span></div>
+  <div class="ftag">Sports &middot; Cold Beer &middot; A Lot of Fun</div>
+  <div class="faddr">1200 Ocean Drive, Miami Beach, FL &middot; Open daily 11 AM &ndash; 2 AM <span class="ph">(hours TBD)</span></div>
+  <div class="fsocial"><a href="https://instagram.com/tugsmiamibeach">@tugsmiamibeach</a> <span class="ph">(placeholder)</span></div>
+  <div class="flegal"><a href="privacy.html">Privacy Policy</a> &middot; <a href="cookies.html">Cookie Policy</a></div>
+</footer>
+<div class="stripes b"></div>
+
+<script>
+(function(){
+  var b = document.querySelector('.burger'), h = document.querySelector('header');
+  if(!b) return;
+  b.addEventListener('click', function(){
+    var open = h.classList.toggle('open');
+    b.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('header nav a').forEach(function(a){
+    a.addEventListener('click', function(){ h.classList.remove('open'); b.setAttribute('aria-expanded','false'); });
+  });
+})();
+</script>
+</body></html>
